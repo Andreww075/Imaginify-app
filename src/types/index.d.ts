@@ -29,8 +29,8 @@ declare type AddImageParams = {
     prompt: string | undefined;
     color: string | undefined;
   };
-  userId: string | null;
-  path: string | null;
+  userId: string;
+  path: string;
 };
 
 declare type UpdateImageParams = {
@@ -48,8 +48,8 @@ declare type UpdateImageParams = {
     prompt: string | undefined;
     color: string | undefined;
   };
-  userId: string | null;
-  path: string | null;
+  userId: string;
+  path: string;
 };
 
 declare type Transformations = {
