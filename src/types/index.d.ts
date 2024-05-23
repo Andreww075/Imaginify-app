@@ -8,48 +8,48 @@ declare type CreateUserParams = {
 };
 
 declare type UpdateUserParams = {
-  firstName: string;
-  lastName: string;
-  username: string;
-  photo: string;
+  firstName: string | null;
+  lastName: string | null;
+  username: string | null;
+  photo: string | null;
 };
 
 // ====== IMAGE PARAMS
 declare type AddImageParams = {
   image: {
-    title: string;
-    publicId: string;
-    transformationType: string;
-    width: number;
-    height: number;
+    title: string | null;
+    publicId: string | null;
+    transformationType: string | null;
+    width: number | null;
+    height: number | null;
     config: any;
-    secureURL: string;
-    transformationURL: string;
+    secureURL: string | null;
+    transformationURL: string | null;
     aspectRatio: string | undefined;
     prompt: string | undefined;
     color: string | undefined;
   };
-  userId: string;
-  path: string;
+  userId: string | null;
+  path: string | null;
 };
 
 declare type UpdateImageParams = {
   image: {
-    _id: string;
-    title: string;
-    publicId: string;
-    transformationType: string;
-    width: number;
-    height: number;
+    _id: string | null;
+    title: string | null;
+    publicId: string | null;
+    transformationType: string | null;
+    width: number | null;
+    height: number | null;
     config: any;
-    secureURL: string;
-    transformationURL: string;
+    secureURL: string | null;
+    transformationURL: string | null;
     aspectRatio: string | undefined;
     prompt: string | undefined;
     color: string | undefined;
   };
-  userId: string;
-  path: string;
+  userId: string | null;
+  path: string | null;
 };
 
 declare type Transformations = {
