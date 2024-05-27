@@ -1,30 +1,33 @@
+/* eslint-disable no-unused-vars */
+
+// ====== USER PARAMS
 declare type CreateUserParams = {
-  clerkId: string | null;
-  email: string | null;
-  username: string | null;
-  firstName: string | null;
-  lastName: string | null;
-  photo: string | null;
+  clerkId: string;
+  email: string;
+  username: string;
+  firstName: string;
+  lastName: string;
+  photo: string;
 };
 
 declare type UpdateUserParams = {
-  firstName: string | null;
-  lastName: string | null;
-  username: string | null;
-  photo: string | null;
+  firstName: string;
+  lastName: string;
+  username: string;
+  photo: string;
 };
 
 // ====== IMAGE PARAMS
 declare type AddImageParams = {
   image: {
-    title: string | null;
-    publicId: string | null;
-    transformationType: string | null;
-    width: number | null;
-    height: number | null;
+    title: string;
+    publicId: string;
+    transformationType: string;
+    width: number;
+    height: number;
     config: any;
-    secureURL: string | null;
-    transformationURL: string | null;
+    secureURL: string;
+    transformationURL: string;
     aspectRatio: string | undefined;
     prompt: string | undefined;
     color: string | undefined;
@@ -35,15 +38,15 @@ declare type AddImageParams = {
 
 declare type UpdateImageParams = {
   image: {
-    _id: string | null;
-    title: string | null;
-    publicId: string | null;
-    transformationType: string | null;
-    width: number | null;
-    height: number | null;
+    _id: string;
+    title: string;
+    publicId: string;
+    transformationType: string;
+    width: number;
+    height: number;
     config: any;
-    secureURL: string | null;
-    transformationURL: string | null;
+    secureURL: string;
+    transformationURL: string;
     aspectRatio: string | undefined;
     prompt: string | undefined;
     color: string | undefined;
